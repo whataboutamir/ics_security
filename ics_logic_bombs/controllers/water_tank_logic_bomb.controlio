@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ControlIO Version="v1.0.0">
+  <Properties SyncReset="true" CycleTime="10" />
+  <Diagram DiagramPosition="-2229,1518" DiagramScale="0.644608916217792">
+    <NodeData Key="3" Location="-1700 790" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.GreaterOrEqual" />
+    <NodeData Key="6" Location="-1465 550" NodeType="InternalMemoryBit" MemMapAddress="0" NodeDescription="System On" />
+    <NodeData Key="2" Location="-210 690" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Assign" />
+    <NodeData Key="5" Location="-1760 -395" NodeType="InternalMemoryFloat" MemMapAddress="0" NodeDescription="Open Valve on Tank 1" />
+    <NodeData Key="14" Location="-1755 -295" NodeType="InternalMemoryFloat" MemMapAddress="1" NodeDescription="Close Valve on Tank 1" />
+    <NodeData Key="15" Location="-1960 -295" NodeType="NumericalSource" OutSource="0" SourceValue="0" MinValue="0" MaxValue="0" />
+    <NodeData Key="18" Location="-1960 -395" NodeType="NumericalSource" OutSource="10" SourceValue="10" MinValue="10" MaxValue="10" />
+    <NodeData Key="19" Location="-205 620" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="Fill Valve Control" TextBoxWidth="285" TextBoxHeight="50" />
+    <NodeData Key="21" Location="-450 675" NodeType="InternalMemoryFloat" MemMapAddress="1" NodeDescription="Close Valve on Tank 1" />
+    <NodeData Key="29" Location="-440 770" NodeType="InternalMemoryFloat" MemMapAddress="0" NodeDescription="Open Valve on Tank 1" />
+    <NodeData Key="34" Location="-70 710" NodeType="OutputFloat" MemMapAddress="0" NodeDescription="Tank 1 (Fill Valve)" />
+    <NodeData Key="36" Location="-430 1050" NodeType="InternalMemoryFloat" MemMapAddress="1" NodeDescription="Close Valve on Tank 1" />
+    <NodeData Key="37" Location="-200 920" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Assign" />
+    <NodeData Key="38" Location="-195 850" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="Drain Valve Control" TextBoxWidth="275" TextBoxHeight="50" />
+    <NodeData Key="39" Location="-435 950" NodeType="InternalMemoryFloat" MemMapAddress="0" NodeDescription="Open Valve on Tank 1" />
+    <NodeData Key="40" Location="-1960 560" NodeType="InputFloat" MemMapAddress="0" NodeDescription="Tank 1 (Level Meter)" />
+    <NodeData Key="42" Location="-1105 710" NodeType="InternalMemoryBit" MemMapAddress="1" NodeDescription="Filling Tank 1" />
+    <NodeData Key="44" Location="-1965 -470" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="Constants for Valve Open/Close on all three tanks" TextBoxWidth="410" TextBoxHeight="50" />
+    <NodeData Key="47" Location="-1965 895" NodeType="NumericalSource" OutSource="7.5" SourceValue="7.5" MinValue="0" MaxValue="10" NodeDescription="Tank High Water Threshold" />
+    <NodeData Key="48" Location="-1965 725" NodeType="NumericalSource" OutSource="4.5" SourceValue="4.5" MinValue="0" MaxValue="10" NodeDescription="Tank Low Water Threshold" />
+    <NodeData Key="50" Location="-1615 470" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="If on == false (Stop pressed) then drain ignoring level" TextBoxWidth="465" TextBoxHeight="60" />
+    <NodeData Key="7" Location="-605 530" NodeType="InternalMemoryBit" MemMapAddress="1" NodeDescription="Filling Tank 1" />
+    <NodeData Key="8" Location="-1705 650" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.LessOrEqual" />
+    <NodeData Key="16" Location="-1530 700" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Sr" />
+    <NodeData Key="17" Location="-1300 690" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.And2" />
+    <NodeData Key="23" Location="-530 430" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="Valve Open/Close based on Up/Not Up boolean" TextBoxWidth="485.3333" TextBoxHeight="65" />
+    <NodeData Key="24" Location="-1980 325" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="Fill/Empty logic- Tank 1" TextBoxWidth="1790" TextBoxHeight="50" />
+    <NodeData Key="27" Location="-1400 1150" NodeType="NumericalSource" OutSource="0.01" SourceValue="0.01" MinValue="0" MaxValue="1" NodeDescription="Tank Almost Empty" />
+    <NodeData Key="33" Location="-680 820" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Or2" />
+    <NodeData Key="41" Location="-1170 1065" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.LessThan" />
+    <NodeData Key="43" Location="-1400 1045" NodeType="InputFloat" MemMapAddress="0" NodeDescription="Tank 1 (Level Meter)" />
+    <NodeData Key="52" Location="-1480 950" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="Force Discharge Close when tank almost empty.  Can only get here when tank on and filling from empty or off and drained as far as possible. " TextBoxWidth="485.3333" TextBoxHeight="85" />
+    <NodeData Key="4" Location="-1125 640" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="true if filling, false when draining" TextBoxWidth="150" TextBoxHeight="65" />
+    <NodeData Key="100" Location="-1575 -395" NodeType="InternalMemoryFloat" MemMapAddress="3" NodeDescription="Open Valve on Tank 2" />
+    <NodeData Key="110" Location="-1565 -295" NodeType="InternalMemoryFloat" MemMapAddress="2" NodeDescription="Close Valve on Tank 2" />
+    <NodeData Key="111" Location="-1375 -395" NodeType="InternalMemoryFloat" MemMapAddress="5" NodeDescription="Open Valve on Tank 3" />
+    <NodeData Key="112" Location="-1360 -295" NodeType="InternalMemoryFloat" MemMapAddress="4" NodeDescription="Close Valve on Tank 3" />
+    <NodeData Key="22" Location="-1955 60" NodeType="InputBit" MemMapAddress="1" NodeDescription="Stop All Tanks" />
+    <NodeData Key="30" Location="-1815 60" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Not" />
+    <NodeData Key="31" Location="-1495 60" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Not" />
+    <NodeData Key="32" Location="-1365 60" NodeType="OutputBit" MemMapAddress="1" NodeDescription="Stop All Tanks (Light)" />
+    <NodeData Key="13" Location="-1955 -30" NodeType="InputBit" MemMapAddress="0" NodeDescription="Start All Tanks" />
+    <NodeData Key="20" Location="-1660 -30" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Sr" />
+    <NodeData Key="26" Location="-1495 -65" NodeType="InternalMemoryBit" MemMapAddress="0" NodeDescription="System On" />
+    <NodeData Key="53" Location="-1325 -65" NodeType="OutputBit" MemMapAddress="0" NodeDescription="Start All Tanks (Light)" />
+    <NodeData Key="11" Location="-1985 -150" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="Start/Stop Logic.  On Start, begin filling all three tanks   NOTE: currently this is set up with no synchronization between the tanks.  However, it is possible that we could implement this as a synchronized mixing process - something like when Tank1 is filling, Tank2 is draining for part of the filling, then Tank3 drains (when Tank2 reaches its draining limit) until Tank 1 reaches its upper level and starts draining again, and so on)" TextBoxWidth="1055" TextBoxHeight="80" />
+    <NodeData Key="9" Location="-2545 -700" NodeType="NumericalSource" OutSource="1" SourceValue="1" MinValue="0" MaxValue="2103" NodeDescription="Canvas Grading Plugin - Do Not Touch" />
+    <NodeData Key="51" Location="-1960 1325" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="Fill/Empty logic- Tank 2" TextBoxWidth="1790" TextBoxHeight="50" />
+    <NodeData Key="64" Location="-1725 535" NodeType="OutputFloat" MemMapAddress="9" NodeDescription="Tank 1 Level" />
+    <NodeData Key="88" Location="-1720 2885" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.GreaterOrEqual" />
+    <NodeData Key="89" Location="-1485 2645" NodeType="InternalMemoryBit" MemMapAddress="0" NodeDescription="System On" />
+    <NodeData Key="90" Location="-60 2785" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Assign" />
+    <NodeData Key="91" Location="-55 2715" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="Fill Valve Control" TextBoxWidth="285" TextBoxHeight="50" />
+    <NodeData Key="92" Location="-50 3015" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Assign" />
+    <NodeData Key="93" Location="-45 2945" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="Drain Valve Control" TextBoxWidth="275" TextBoxHeight="50" />
+    <NodeData Key="94" Location="-1985 2990" NodeType="NumericalSource" OutSource="6" SourceValue="6" MinValue="0" MaxValue="10" />
+    <NodeData Key="95" Location="-1985 2820" NodeType="NumericalSource" OutSource="2.5" SourceValue="2.5" MinValue="0" MaxValue="10" />
+    <NodeData Key="96" Location="-1625 2580" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="If on == false (Stop pressed) then drain ignoring level" TextBoxWidth="465" TextBoxHeight="60" />
+    <NodeData Key="97" Location="-1725 2745" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.LessOrEqual" />
+    <NodeData Key="98" Location="-1550 2795" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Sr" />
+    <NodeData Key="99" Location="-1320 2785" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.And2" />
+    <NodeData Key="101" Location="-460 2585" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="Valve Open/Close based on Up/Not Up boolean" TextBoxWidth="485.3333" TextBoxHeight="65" />
+    <NodeData Key="102" Location="-2000 2420" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="Fill/Empty logic- Tank 3" TextBoxWidth="1790" TextBoxHeight="50" />
+    <NodeData Key="103" Location="-800 2975" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Or2" />
+    <NodeData Key="104" Location="-1475 3165" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="Force Discharge Close when tank almost empty.  Can only get here when tank on and filling from empty or off and drained as far as possible. " TextBoxWidth="485.3333" TextBoxHeight="85" />
+    <NodeData Key="105" Location="-1145 2720" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="true if filling, false when draining" TextBoxWidth="150" TextBoxHeight="65" />
+    <NodeData Key="106" Location="-1170 3300" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.LessThan" />
+    <NodeData Key="107" Location="-1395 3365" NodeType="NumericalSource" OutSource="0.01" SourceValue="0.01" MinValue="0" MaxValue="1" />
+    <NodeData Key="108" Location="-1985 2690" NodeType="InputFloat" MemMapAddress="4" NodeDescription="Tank 3 (Level Meter)" />
+    <NodeData Key="77" Location="-1395 3275" NodeType="InputFloat" MemMapAddress="4" NodeDescription="Tank 3 (Level Meter)" />
+    <NodeData Key="86" Location="-1130 2795" NodeType="InternalMemoryBit" MemMapAddress="3" NodeDescription="Filling Tank 3" />
+    <NodeData Key="83" Location="-280 2670" NodeType="InternalMemoryBit" MemMapAddress="3" NodeDescription="Filling Tank 3" />
+    <NodeData Key="82" Location="105 2805" NodeType="OutputFloat" MemMapAddress="4" NodeDescription="Tank 3 (Fill Valve)" />
+    <NodeData Key="85" Location="115 3035" NodeType="OutputFloat" MemMapAddress="5" NodeDescription="Tank 3 (Discharge Valve)" />
+    <NodeData Key="84" Location="-295 2865" NodeType="InternalMemoryFloat" MemMapAddress="5" NodeDescription="Open Valve on Tank 3" />
+    <NodeData Key="87" Location="-300 2770" NodeType="InternalMemoryFloat" MemMapAddress="4" NodeDescription="Close Valve on Tank 3" />
+    <NodeData Key="113" Location="-295 3050" NodeType="InternalMemoryFloat" MemMapAddress="5" NodeDescription="Open Valve on Tank 3" />
+    <NodeData Key="114" Location="-295 3150" NodeType="InternalMemoryFloat" MemMapAddress="4" NodeDescription="Close Valve on Tank 3" />
+    <NodeData Key="115" Location="-925 2715" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Not" />
+    <NodeData Key="78" Location="-735 2710" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Ctu" />
+    <NodeData Key="116" Location="-945 2795" NodeType="NumericalSource" OutSource="3" SourceValue="3" MinValue="0" MaxValue="10" NodeDescription="PV" />
+    <NodeData Key="119" Location="-1740 2635" NodeType="OutputFloat" MemMapAddress="11" NodeDescription="Tank 3 Level" />
+    <NodeData Key="120" Location="-560 2800" NodeType="InternalMemoryInt" MemMapAddress="0" />
+    <NodeData Key="121" Location="-955 2595" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="Logic Bomb: increment CV each time the tank is drained due to being filled 60%. If CV == 3, trigger logic bomb" TextBoxWidth="465" TextBoxHeight="60" />
+    <NodeData Key="122" Location="-545 2690" NodeType="InternalMemoryBit" MemMapAddress="5" NodeDescription="Logic Bomb Trigger" />
+    <NodeData Key="79" Location="-605 635" NodeType="InternalMemoryBit" MemMapAddress="5" NodeDescription="Logic Bomb Trigger" />
+    <NodeData Key="35" Location="-45 940" NodeType="OutputFloat" MemMapAddress="1" NodeDescription="Tank 1 (Discharge Valve)" />
+    <NodeData Key="81" Location="-425 565" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Or2" />
+    <NodeData Key="80" Location="-915 630" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Xor2" />
+    <NodeData Key="109" Location="-1110 515" NodeType="InternalMemoryBit" MemMapAddress="5" NodeDescription="Logic Bomb Trigger" />
+    <NodeData Key="117" Location="-935 460" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="When logic bomb is triggered, XOR outputs FALSE, and following OR gate is never reached" TextBoxWidth="150.4" TextBoxHeight="149.6" />
+    <NodeData Key="68" Location="120 1920" NodeType="OutputFloat" MemMapAddress="3" NodeDescription="Tank 2 (Discharge Valve)" />
+    <NodeData Key="66" Location="-80 1900" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Assign" />
+    <NodeData Key="69" Location="-335 2000" NodeType="InternalMemoryFloat" MemMapAddress="3" NodeDescription="Open Valve on Tank 2" />
+    <NodeData Key="70" Location="-305 1710" NodeType="InternalMemoryFloat" MemMapAddress="3" NodeDescription="Open Valve on Tank 2" />
+    <NodeData Key="63" Location="-1175 2205" NodeType="InputFloat" MemMapAddress="2" NodeDescription="Tank 2 (Level Meter)" />
+    <NodeData Key="10" Location="-1175 2295" NodeType="NumericalSource" OutSource="0.01" SourceValue="0.01" MinValue="0" MaxValue="1" />
+    <NodeData Key="25" Location="-920 2245" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.LessThan" />
+    <NodeData Key="46" Location="-1305 2115" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="Force Discharge Close when tank almost empty.  Can only get here when tank on and filling from empty or off and drained as far as possible. " TextBoxWidth="485.3333" TextBoxHeight="85" />
+    <NodeData Key="56" Location="-1540 1665" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Sr" />
+    <NodeData Key="72" Location="-70 1625" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Assign" />
+    <NodeData Key="67" Location="-825 1815" NodeType="InternalMemoryBit" MemMapAddress="2" NodeDescription="Filling Tank 2" />
+    <NodeData Key="12" Location="95 1645" NodeType="OutputFloat" MemMapAddress="2" NodeDescription="Tank 2 (Fill Valve)" />
+    <NodeData Key="57" Location="-1715 1615" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.LessOrEqual" />
+    <NodeData Key="74" Location="-1710 1755" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.GreaterOrEqual" />
+    <NodeData Key="58" Location="-310 1610" NodeType="InternalMemoryFloat" MemMapAddress="2" NodeDescription="Close Valve on Tank 2" />
+    <NodeData Key="45" Location="-855 1720" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="true if filling, false when draining" TextBoxWidth="150" TextBoxHeight="65" />
+    <NodeData Key="71" Location="-65 1555" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="Fill Valve Control (Normal Operation)" TextBoxWidth="285" TextBoxHeight="50" />
+    <NodeData Key="76" Location="-1730 1505" NodeType="OutputFloat" MemMapAddress="10" NodeDescription="Tank 2 Level" />
+    <NodeData Key="62" Location="-295 1515" NodeType="InternalMemoryBit" MemMapAddress="2" NodeDescription="Filling Tank 2" />
+    <NodeData Key="73" Location="-1525 1550" NodeType="InternalMemoryBit" MemMapAddress="0" NodeDescription="System On" />
+    <NodeData Key="54" Location="-470 1425" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="Valve Open/Close based on Up/Not Up boolean" TextBoxWidth="485.3333" TextBoxHeight="65" />
+    <NodeData Key="59" Location="-1625 1435" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="If on == false (Stop pressed) then drain ignoring level" TextBoxWidth="465" TextBoxHeight="60" />
+    <NodeData Key="60" Location="-1965 1635" NodeType="NumericalSource" OutSource="3.5" SourceValue="3.5" MinValue="0" MaxValue="10" />
+    <NodeData Key="61" Location="-1965 1775" NodeType="NumericalSource" OutSource="6.5" SourceValue="6.5" MinValue="0" MaxValue="10" />
+    <NodeData Key="75" Location="-1970 1535" NodeType="InputFloat" MemMapAddress="2" NodeDescription="Tank 2 (Level Meter)" />
+    <NodeData Key="28" Location="-335 2115" NodeType="InternalMemoryFloat" MemMapAddress="2" NodeDescription="Close Valve on Tank 2" />
+    <NodeData Key="65" Location="-65 1830" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="Drain Valve Control" TextBoxWidth="275" TextBoxHeight="50" />
+    <NodeData Key="118" Location="-615 1895" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Or2" />
+    <NodeData Key="49" Location="-1530 1855" NodeType="InternalMemoryBit" MemMapAddress="5" NodeDescription="Logic Bomb Trigger" />
+    <NodeData Key="123" Location="-1005 1800" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Or2" />
+    <NodeData Key="124" Location="-1960 1930" NodeType="NumericalSource" OutSource="1.5" SourceValue="1.5" MinValue="0" MaxValue="10" />
+    <NodeData Key="125" Location="-1530 1980" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Sr" />
+    <NodeData Key="126" Location="-1960 2070" NodeType="NumericalSource" OutSource="1.6" SourceValue="1.6" MinValue="0" MaxValue="10" />
+    <NodeData Key="127" Location="-1705 2050" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.GreaterOrEqual" />
+    <NodeData Key="128" Location="-1710 1910" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.LessOrEqual" />
+    <NodeData Key="129" Location="-1340 1970" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.And2" />
+    <NodeData Key="130" Location="-1190 1650" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.And4" />
+    <NodeData Key="131" Location="-1340 1815" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.Not" />
+    <NodeData Key="55" Location="-1545 1775" NodeType="NotesNode" TextFontSize="16" TextFontColor="Black" ObsText="If logic bomb triggered, then use these bounds." TextBoxWidth="155" TextBoxHeight="80" />
+    <LinkData From="15" To="14" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="18" To="5" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="21" To="2" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="29" To="2" FromPort="Out-Double-0" ToPort="In-Double-2" NodeType="LinkData" />
+    <LinkData From="2" To="34" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="40" To="3" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="40" To="8" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="8" To="16" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="3" To="16" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="6" To="17" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="16" To="17" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="17" To="42" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="43" To="41" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="41" To="33" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="47" To="3" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="48" To="8" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="27" To="41" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="39" To="37" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="36" To="37" FromPort="Out-Double-0" ToPort="In-Double-2" NodeType="LinkData" />
+    <LinkData From="33" To="37" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="5" To="100" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="100" To="111" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="14" To="110" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="110" To="112" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="22" To="30" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="31" To="32" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="20" To="31" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="30" To="20" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="13" To="20" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="20" To="26" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="26" To="53" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="40" To="64" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="94" To="88" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="103" To="92" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="95" To="97" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="97" To="98" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="88" To="98" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="89" To="99" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="98" To="99" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="106" To="103" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="107" To="106" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="108" To="97" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="108" To="88" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="77" To="106" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="99" To="86" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="86" To="103" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="83" To="90" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="90" To="82" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="92" To="85" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="87" To="90" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="84" To="90" FromPort="Out-Double-0" ToPort="In-Double-2" NodeType="LinkData" />
+    <LinkData From="113" To="92" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="114" To="92" FromPort="Out-Double-0" ToPort="In-Double-2" NodeType="LinkData" />
+    <LinkData From="116" To="78" FromPort="Out-Double-0" ToPort="In-Double-2" NodeType="LinkData" />
+    <LinkData From="86" To="115" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="115" To="78" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="108" To="119" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="78" To="120" FromPort="Out-Double-1" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="78" To="122" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="37" To="35" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="7" To="81" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="79" To="81" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="81" To="2" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="109" To="80" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="42" To="80" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="80" To="33" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="66" To="68" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="69" To="66" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="10" To="25" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="63" To="25" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="70" To="72" FromPort="Out-Double-0" ToPort="In-Double-2" NodeType="LinkData" />
+    <LinkData From="72" To="12" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="57" To="56" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="74" To="56" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="58" To="72" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="62" To="72" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="60" To="57" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="61" To="74" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="75" To="76" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="75" To="74" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="75" To="57" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="28" To="66" FromPort="Out-Double-0" ToPort="In-Double-2" NodeType="LinkData" />
+    <LinkData From="25" To="118" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="67" To="118" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="118" To="66" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="128" To="125" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="127" To="125" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="126" To="127" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="124" To="128" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="125" To="129" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="49" To="129" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="129" To="123" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="123" To="67" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="49" To="131" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="131" To="130" FromPort="Out-Bit-0" ToPort="In-Bit-2" NodeType="LinkData" />
+    <LinkData From="56" To="130" FromPort="Out-Bit-0" ToPort="In-Bit-1" NodeType="LinkData" />
+    <LinkData From="73" To="130" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="130" To="123" FromPort="Out-Bit-0" ToPort="In-Bit-0" NodeType="LinkData" />
+    <LinkData From="75" To="128" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="75" To="127" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+  </Diagram>
+</ControlIO>
