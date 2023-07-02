@@ -2,8 +2,6 @@
 
 This repository contains a collection of projects focusing on learning about Industrial Control System (ICS) security. The projects demonstrate the modelling and simulation of ICS with control logic, PLC programming, and network traffic analysis for reconnaissance.
 
-## Project Overview
-
 ### 1. ICS Modelling and Logic Bombs (see `ics_logic_bombs/`)
 - **Description**: This project involves the modelling of an Industrial Control System (ICS) using Factory I/O and Control I/O software. It aims to simulate the process and design the underlying controller. The project also introduces "logic bombs" which are sets of instructions embedded in the program that can cause changes to normal operating conditions.
 - **Tools**: Factory I/O, Control I/O
